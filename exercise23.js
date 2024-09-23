@@ -12,3 +12,14 @@ Expected Console Output :
 
 */
 
+function time(date) {
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let second = date.getSeconds();
+
+  return `${hour}:${minutes}:${second}`;
+}
+let date = new Date();
+
+console.log(time(date));
+
