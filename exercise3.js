@@ -5,9 +5,13 @@
 
 */
 
-let product = "Chocolate";
-let price = 50;
-let quantity = 5;
-let totalPrice = quantity * price;
+const productPurchased = () => {
+   const product = "Chocolate";
+   const price = 50;
+   const quantity = 5;
+   const totalPrice = quantity * price;
 
-console.log(`You purchased ${quantity} units of ${product} for $${totalPrice}`);
+   return `You purchased ${quantity} units of ${product} for $${totalPrice}`;
+}
+
+console.log(productPurchased());
