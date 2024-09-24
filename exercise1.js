@@ -5,8 +5,9 @@
 
 */
 
-function eulerNumber(num) {
-   return Number(num.toFixed(4));
-}
+const eulerRoundedNumber = () => {
+   const euler = 2.71828;
+   return Number(euler.toFixed(4));
+}  
 
-console.log(eulerNumber(2.71828))
+console.log(eulerRoundedNumber())
