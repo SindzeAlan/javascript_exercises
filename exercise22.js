@@ -4,6 +4,7 @@
 Volume of a cylinder : V = πr2h
 where r is the radius and h is the height of the cylinder.
 
+also do it with arrow function
 */
 
 class VolumeCylinder{
@@ -13,9 +14,21 @@ class VolumeCylinder{
   }
 
   volume(){
-    return (Math.PI * this.radius * 2 * this.height).toFixed(2);
+    return Number((Math.PI * this.radius * 2 * this.height).toFixed(2));
   }
 }
 
-const calculateVolume = new VolumeCylinder(2,3);
+const calculateVolume = new VolumeCylinder(4,5);
 console.log(calculateVolume.volume());
+
+/*
+An alternatif solution to this problem using only functions is as follows 
+
+const volumeCylinder = (radius, height) => {
+  const volume = Math.PI * radius * 2 * height;
+
+  return Number(volume.toFixed(4));
+}
+
+console.log(volumeCylinder(2, 3));
+*/

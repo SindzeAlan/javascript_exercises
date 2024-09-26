@@ -4,10 +4,12 @@
 
 */
 
-const ages = [15, 17, 20, 18, 12, 34, 28, 30, 32, 42, 47, 50, 11, 13, 49];
+function filterOutValues(array, valuesToFilter) {
+  return array.filter(element => !valuesToFilter.includes(element));
+}
 
-let myFilter = ages.filter((value) => value)
+const originalArray = [1, 2, 3, 4, 5, 6];
+const valuesToFilter = [2, 4, 6];
 
-
-console.log(ages)
-// console.log(ageUnderTwenty(ages, 15));
+const filteredArray = filterOutValues(originalArray, valuesToFilter);
+console.log(filteredArray);

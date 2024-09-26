@@ -8,16 +8,23 @@ name : "David Rayy",
 sclass : "VI",
 rollno : 12 };
 
+use a function and print before deliting object property
 */
 
-let student = {
-  name: "David Rayy",
-  class: "VI",
-  rollno: 12
+const deleteProperty = () => {
+  let student = {
+    name: "David Rayy",
+    class: "VI",
+    rollno: 12
+  };
+
+  console.log(student);
+
+  if (student.hasOwnProperty("rollno")) {
+     delete student.rollno;
+  }
+
+  return student;
 }
 
-if(student.hasOwnProperty("rollno")){
-  delete student.rollno;
-}
-
-console.log(student);
+console.log(deleteProperty());

@@ -2,11 +2,10 @@
  
 7. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
 
+  Use ES6
  */
 
-const intergers = [-10, 1, 2, 3, 4, 5];
-
-function sumOfCubesIntergers(arr) {
+const sumOfCubesIntergers = (arr) => {
 
   const newArray = [];
   let sum = 0;
@@ -25,7 +24,7 @@ function sumOfCubesIntergers(arr) {
 
 }
 
-console.log(`The sum of cubes of all intergers is: ${sumOfCubesIntergers(intergers)}`)
+console.log(`The sum of cubes of all intergers is: ${sumOfCubesIntergers([-10, 1, 2, 3, 4, 5])}`)
 
 
 

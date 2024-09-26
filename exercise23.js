@@ -10,16 +10,18 @@ Expected Console Output :
 "14:37:46"
 "14:37:47"
 
+To redo
 */
 
-function time(date) {
-  let hour = date.getHours();
-  let minutes = date.getMinutes();
-  let second = date.getSeconds();
+const clock = () => {
+  setInterval(()=> {
+    const presentDay = new Date();
+    let hours = presentDay.getHours();
+    let minutes = presentDay.getMinutes();
+    let seconds = presentDay.getSeconds();
 
-  return `${hour}:${minutes}:${second}`;
+    console.log(`${hours} : ${minutes} : ${seconds}`);
+  }, 1000);
 }
-let date = new Date();
 
-console.log(time(date));
-
+console.log(clock());

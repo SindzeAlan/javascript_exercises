@@ -5,13 +5,9 @@
 
 */
 
-function calculateArea(radius = "Radius is missing!") {
-  let areaCircle = Math.PI*(radius*radius)
-  if(typeof radius) {
-    return radius;
-  }
-
-   return areaCircle
+function calculateAreaCircle(radius) {
+  const areaCircle = Math.PI * (radius * radius);
+  return radius === undefined ? radius = "Radius is missing!" : areaCircle;
 }
 
-console.log(calculateArea())
+console.log(calculateArea(2));

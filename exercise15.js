@@ -4,8 +4,11 @@
 
 */
 
-let numbers = [1, 2, 3, 40, 5, 6, 7, 8, 9, 10, 20, 15, 14, 99];
+// Use a function here
 
-let evenNumbers = numbers.filter((num) => num % 2 === 0);
+const largestEvenNumber = (arr) => {
+  const evenNumbers = arr.filter((num) => num % 2 === 0);
+  return Math.max(...evenNumbers);
+}
 
-console.log(`The largest even number is: ${Math.max(...evenNumbers)}`)
+console.log(`The largest even number is: ${largestEvenNumber([1, 2, 3, 40, 5, 6, 7, 8, 9, 10, 20, 15, 14, 99, 92])}`);

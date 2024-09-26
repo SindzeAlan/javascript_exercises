@@ -4,14 +4,13 @@
 
 */
 
-function extraction(arr, index) {
-  let extractNumber = 0;
-  for(let i = 0; i < arr.length; i++){
-    
-  }
-
+const valuesExtractedByIndexes = (arr, indexes) => {
+  return indexes.map((index) => arr[index]);
 }
 
-const myArray = [4, 5, 1, 9, 20];
-extraction(myArray, 2);
+const arrayOfIntergers = [2, 4, 8, 90, 12];
+
+const indexes = [0, 4, 2];
+
+console.log(valuesExtractedByIndexes(arrayOfIntergers, indexes));
 

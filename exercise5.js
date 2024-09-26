@@ -5,12 +5,17 @@
 
 */
 
-let car = {
-  make: "Toyota",
-  model: "LandRover",
-  year: 2020
+const carProperties = () => {
+  const car = {
+    make: "Toyota",
+    model: "LandRover",
+    year: 2020
+  }
+  
+  const {make, model, year = "unknown"} = car;
+  const prop = [make, model, year];
+  
+  return prop;
 }
 
-let {make, model, year = "unknown"} = car;
-
-console.log(make,model,year);
+console.log(carProperties());

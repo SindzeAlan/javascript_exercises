@@ -5,16 +5,17 @@
 
 */
 
-function average(...arguments) {
+const average = (...arguments) => {
    let totalSum = 0;
-   for(let i = 0; i < arguments.length; i++){
+   for (let i = 0; i < arguments.length; i++) {
       totalSum += arguments[i];
    }
 
-   return Number((totalSum/arguments.length).toFixed(2));//The function will return the average of the sum of the arguments and round it to 2 decimal places. Since the method toFixed() has as type 'string', to convert from string to number we use "Number()"
+   return Number((totalSum / arguments.length).toFixed(2));
 }
 
-console.log(average(1,2,3,4,5,65));
+console.log(average(0,0));
+
 
 /* 
 

@@ -4,19 +4,21 @@
   
  */
 
-let obj1 = {
-  name: 'illiam',
-  age: 29
+const isObjectSubset = (obj1, obj2) => {
+
+  for (const key in obj2) {
+    if (obj2.hasOwnProperty(key)) {
+      if (obj1[key] !== obj2[key]) {
+        return `The two objects does not have properties in commun`;
+      }
+    }
+  }
+  return `The two objects have propertties in commun`;
 }
 
-let obj2 = {
-  name: 'Willim',
-  age: 29
-}
+const object1 = { name: 'Alice', age: 25, city: 'Paris' };
+const object2 = { age: 25, city: 'Paris' };
+const object3 = { age: 30, city: 'Paris' };
 
-if(obj1.hasOwnProperty('name') === obj2.hasOwnProperty('name')){
-  console.log(true)
-}
-else{
-  console.log(false)
-}
+console.log(isObjectSubset(object1, object2)); 
+console.log(isObjectSubset(object1, object3)); 

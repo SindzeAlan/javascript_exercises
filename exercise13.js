@@ -2,13 +2,15 @@
 
 3- Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
 
+use in one function
 */
-function multiplication(num1, num2) {
-  return num1 * num2
-}
-console.log(multiplication(3, 2));
 
-function division(numerator, denominator) {
-  return numerator/denominator;
+const multiplicationAndDivision = (num1, num2) => {
+  const multiplication = num1 * num2;
+
+  const division = (num1 / num2).toFixed(2);
+
+  return `The multiplication of the two numbers is : ${multiplication} and Division is ${division}`;
 }
-console.log(division(9, 8));
+
+console.log(multiplicationAndDivision(2.2, 2));

@@ -4,15 +4,11 @@
 
 */
 
-const randomNumber = Math.floor(Math.random() * 10 + 1);//This will generate a random number from 1-10
-console.log(`Random number is ${randomNumber}`);
+const guessNumber = number => {
+  const randomNumber = Math.floor(Math.random() * 10 + 1);
+  console.log(`Random number is ${randomNumber}`);
 
-function guessNumber(number) {
-  if(number == randomNumber){
-    return 'Good Work';
-  }
-
-  return 'Not matched';
+  return number == randomNumber ? 'Good Work' : 'Not matched';
 }
 
 console.log(guessNumber(2));

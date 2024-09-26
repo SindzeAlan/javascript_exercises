@@ -5,11 +5,14 @@
 
 */
 
+const reversedWords = (arr) => {
+
+  return arr.map((arr) => {
+    return arr.split('').reverse().join('');
+  });
+
+}
+
 const cars = ['Toyota', 'Ferrari', 'Jeep', 'Audi'];
 
-const reversedCar = cars.map(reverseStr);
-console.log(reversedCar);
-
-function reverseStr(arr) {
-  return arr.split('').reverse().join('');
-}
+console.log(reversedWords(cars));

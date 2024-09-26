@@ -6,7 +6,7 @@
 */
 
 const findMax = (arr) => {
-  return Math.max(...arr); // With the "Math.max" function it will search for the maximum value in the array 
+  return Math.max(...arr); 
 }
 
 console.log(findMax([1, 5, 80, 7, 9, 100]));

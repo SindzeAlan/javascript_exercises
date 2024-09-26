@@ -10,4 +10,4 @@ const eulerRoundedNumber = () => {
    return Number(euler.toFixed(4));
 }  
 
-console.log(eulerRoundedNumber())
+console.log(eulerRoundedNumber());
