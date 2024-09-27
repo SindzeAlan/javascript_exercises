@@ -2,7 +2,6 @@
 
 15. Write a function called add with two parameters which return a promise containing the result or the error message "Must provide two parameters" in case the user provided only no or only one parameter.
 
-use ES6
 */
 
 const add = (a, b) => {

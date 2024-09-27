@@ -13,15 +13,23 @@ Expected Console Output :
 To redo
 */
 
-const clock = () => {
-  setInterval(()=> {
+const clock = (secondsToDisplay) => {
+  let i = 0
+  const intervalId = setInterval(()=> {
+
+    if(i >= secondsToDisplay){
+      clearInterval(intervalId);
+      return;
+    }
     const presentDay = new Date();
     let hours = presentDay.getHours();
     let minutes = presentDay.getMinutes();
     let seconds = presentDay.getSeconds();
 
-    console.log(`${hours} : ${minutes} : ${seconds}`);
+    console.log(`"${hours} : ${minutes} : ${seconds}"`);
+    i++;
   }, 1000);
+  return `second to show ${secondsToDisplay}`;
 }
 
-console.log(clock());
+console.log(clock(4));

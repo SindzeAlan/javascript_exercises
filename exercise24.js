@@ -10,15 +10,13 @@ function checkString(str) {
 
   const splitStr = str.split('')
 
-  const stringIsUpperCase = splitStr.every((currentValue) => {
-    return currentValue == currentValue.toUpperCase();
-  })
+  const stringIsUpperCase = splitStr.every((currentValue) => currentValue == currentValue.toUpperCase());
 
   return stringIsUpperCase ? 'The string is upper case' : 'The string is lower case';
 
 }
 
-console.log(checkString('HELLO'));
+console.log(checkString('HELLo'));
 
 
 

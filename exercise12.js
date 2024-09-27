@@ -27,23 +27,19 @@
 
 
 const daysLeftToChristmas = () => {
-  const presentDay = new Date(2026, 11, 29);
+  const presentDay = new Date();
 
-  let christMassDay = new Date((new Date()).getFullYear(), 11, 25);
-
-  let daysInMilliseconds = christMassDay.getTime() - presentDay.getTime();
-
-  let daysLeft = Math.ceil(daysInMilliseconds / (1000 * 60 * 60 * 24));
+  const christMassDay = new Date((new Date()).getFullYear(), 11, 25);
 
   if (presentDay > christMassDay) {
+
     christMassDay = new Date((new Date()).getFullYear() + 1, 11, 25);
-    daysInMilliseconds = christMassDay.getTime() - presentDay.getTime();
-    daysLeft = Math.ceil(daysInMilliseconds / (1000 * 60 * 60 * 24));
 
-    return daysLeft
   }
+  const daysInMilliseconds = christMassDay.getTime() - presentDay.getTime();
 
-  return daysLeft;
+  return Math.ceil(daysInMilliseconds / (1000 * 60 * 60 * 24));
+
 }
 
 console.log(daysLeftToChristmas())

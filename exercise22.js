@@ -13,9 +13,7 @@ class VolumeCylinder{
     this.height = height;
   }
 
-  volume(){
-    return Number((Math.PI * this.radius * 2 * this.height).toFixed(2));
-  }
+  volume = () => Number((Math.PI * this.radius * 2 * this.height).toFixed(2));
 }
 
 const calculateVolume = new VolumeCylinder(4,5);

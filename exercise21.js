@@ -12,7 +12,7 @@ use a function and print before deliting object property
 */
 
 const deleteProperty = () => {
-  let student = {
+  const student = {
     name: "David Rayy",
     class: "VI",
     rollno: 12

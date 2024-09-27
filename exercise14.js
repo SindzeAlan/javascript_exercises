@@ -2,7 +2,7 @@
 
 4. Write a JavaScript program to find the longest string from a given array.
 
-user 
+use ES6
 */
 
 const str = ['jack', 'williams', 'jackson', 'robertson', 'hello world' , 'renna', 'serena'];
