@@ -6,9 +6,8 @@
 
 // Use a function here
 
-const largestEvenNumber = (arr) => {
-  const evenNumbers = arr.filter((num) => num % 2 === 0);
-  return Math.max(...evenNumbers);
-}
+const largestEvenNumber = (arr) => Math.max(...arr.filter((num) => num % 2 === 0));
 
-console.log(`The largest even number is: ${largestEvenNumber([1, 2, 3, 40, 5, 6, 7, 8, 9, 10, 20, 15, 14, 99, 92])}`);
+console.log(`The largest even number is: ${largestEvenNumber([1, 2, 3, 40, 5, 6, 7, 8, 9, 10, 20, 15, 14, 99, 90])}`);
+
+module.exports = { largestEvenNumber }

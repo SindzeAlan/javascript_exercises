@@ -8,7 +8,6 @@ name : "David Rayy",
 sclass : "VI",
 rollno : 12 };
 
-use a function and print before deliting object property
 */
 
 const deleteProperty = () => {

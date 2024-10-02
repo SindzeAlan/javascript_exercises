@@ -4,11 +4,12 @@
 
 */
 
-const valuesExtractedByIndexes = (arr, ...indexes) => {
+const valuesExtractedByIndexes = (arr, indexes) => {
   return indexes.map((index) => arr[index]);
 }
 
 const arrayOfIntergers = [2, 4, 8, 90, 12];
 
-console.log(valuesExtractedByIndexes(arrayOfIntergers, 0,4,2));
+console.log(valuesExtractedByIndexes(arrayOfIntergers, [0,4,2]));
 
+module.exports = { valuesExtractedByIndexes }

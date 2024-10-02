@@ -4,17 +4,17 @@
    Write a function called `average` that takes any number of arguments (representing scores) and returns the average score. Round the result to two decimal places.
 
 */
-
-const average = (...arguments) => {
-   let totalSum = 0;
-   for (let i = 0; i < arguments.length; i++) {
-      totalSum += arguments[i];
+const average = (arguments) => {
+   if(arguments === undefined){
+      return 0;
    }
+
+   const totalSum = arguments.reduce((accumulator, currentValue) => accumulator + currentValue);
 
    return Number((totalSum / arguments.length).toFixed(2));
 }
 
-console.log(average(0,0));
+console.log(average([12, 2, 6, 98]));
 
 
 /* 

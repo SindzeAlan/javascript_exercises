@@ -5,13 +5,17 @@
 
 */
 
-const productPurchased = () => {
-   const product = "Chocolate";
-   const price = 50;
-   const quantity = 5;
+const productPurchased = (product, quantity, price) => {
+   
    const totalPrice = quantity * price;
 
    return `You purchased ${quantity} units of ${product} for $${totalPrice}`;
 }
 
-console.log(productPurchased());
+const product = "Chocolate";
+const quantity = 5;
+const price = 50;
+
+console.log(productPurchased(product, quantity, price));
+
+module.exports = { productPurchased };

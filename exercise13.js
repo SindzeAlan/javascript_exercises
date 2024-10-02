@@ -14,3 +14,5 @@ const multiplicationAndDivision = (num1, num2) => {
 }
 
 console.log(multiplicationAndDivision(2.2, 2));
+
+module.exports = { multiplicationAndDivision }

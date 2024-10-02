@@ -4,7 +4,7 @@
    Given an array of objects representing books (each object has properties `title` and `pages`), use the `filter` method to create a new array containing only the books with more than 300 pages.
 
 */
-const BooksMoreThan300Pages = (arr) => {
+const booksMoreThan300Pages = (arr) => {
 
   return books.filter((book) => {
     return book.pages > 300;
@@ -21,4 +21,6 @@ const books = [
   { title: 'the reasons of my wealth', pages: 200 }
 ];
 
-console.log(BooksMoreThan300Pages(books));
+console.log(booksMoreThan300Pages(books));
+
+module.exports = { booksMoreThan300Pages };

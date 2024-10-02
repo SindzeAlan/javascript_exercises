@@ -11,3 +11,7 @@ const eulerRoundedNumber = () => {
 }  
 
 console.log(eulerRoundedNumber());
+
+module.exports = {
+   eulerRoundedNumber
+};

@@ -5,16 +5,14 @@
 use ES6
 */
 
-const str = ['jack', 'williams', 'jackson', 'robertson', 'hello world' , 'renna', 'serena'];
+const str = ['111', '111', '1111', '1111', '0' , '1', 'jjjjjjjjjj'];
 
 
 const longestStr = (arr) => {
-  let longest = '';
-  for (let i = 0; i < arr.length; i++) {
-    if (longest.length < arr[i].length) {
-      longest = arr[i];
-    }
-  }
+
+  const longest = arr.reduce((accumulator,currentValue) => {
+    return accumulator.length < currentValue.length ? currentValue : accumulator;
+  })
 
   return longest;
 }

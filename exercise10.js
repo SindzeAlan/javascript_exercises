@@ -18,5 +18,6 @@ fetchData()
      console.log(sucess);
    })
 
+   module.exports = { fetchData }
 
 

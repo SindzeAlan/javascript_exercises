@@ -2,43 +2,29 @@
  
 7. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
 
-  Use ES6 a refaire 
  */
 
   const sumOfCubes = (number) => {
-    let sum = 0;
-    
-    for (let i = 1; i <= number; i++) {
-      sum += Math.pow(i,3);
+    if(number < 1){
+      return 0
     }
-  
-    return sum;
+
+    return Math.pow(number, 3) + sumOfCubes(number - 1);
   };
   
-  const givenInteger = 5; 
+  const givenInteger = 4; 
   console.log(`The sum of cubes from 1 to ${givenInteger} is: ${sumOfCubes(givenInteger)}`);
   
 
 
 // const sumOfCubesIntergers = (arr) => {
 
-//   const newArray = [];
-//   let sum = 0;
-
-//   for (let i = 0; i < arr.length; i++) {
-//     if (arr[i] >= 1) {
-//       newArray.push((Math.pow(arr[i], 3)));
-//     }
-//   }
-
-//   for (let i = 0; i < newArray.length; i++) {
-//     sum += newArray[i];
-//   }
+//   const sum = arr.reduce((accumulator, currentValue) => {
+//     return accumulator + Math.pow(currentValue, 3);
+//   })
 
 //   return sum;
 
 // }
 
-
-
-
+// console.log(sumOfCubesIntergers([1,2,3]))

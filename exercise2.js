@@ -11,6 +11,8 @@ const findMax = (arr) => {
 
 console.log(findMax([1, 5, 80, 7, 9, 100]));
 
+module.exports = { findMax };
+
 
 /*
     Here is an alternative to find the maximum number of an array wihout using the Math.max function

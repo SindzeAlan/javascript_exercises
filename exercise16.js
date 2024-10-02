@@ -6,13 +6,6 @@
 Use ES6
 */
 
-// const numbers = [1,2,3,4,5,7,8,9,10,2];
-// for (let i = 0; i < numbers.length; i++){
-//   if(numbers[i] == numbers[i]){
-//     numbers[i].splice(i, 1);
-//   }
-// }
-
 const removeDuplicateCharacters = (str) => {
   const frequencyMap = {};
   
@@ -31,7 +24,5 @@ const removeDuplicateCharacters = (str) => {
   return result;
 }
 
-console.log(removeDuplicateCharacters("programming")); 
-console.log(removeDuplicateCharacters("hello world")); 
-console.log(removeDuplicateCharacters("aabbccdd"));    
+console.log(removeDuplicateCharacters("[p,r,o,g,r,a,m,m,i,n,g]")); 
 

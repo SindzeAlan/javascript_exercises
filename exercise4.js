@@ -5,12 +5,16 @@
 
 */
 
-const sortedNumbersAscendingOrder = () => {
-   const arr1 = [100, 20, 3];
-   const arr2 = [14, 50, 6];
-   const combinedArr = [...arr1, ...arr2]; 
+
+const sortedNumbersAscendingOrder = (arr1, arr2) => {
+   const combinedArr = [...new Set([...arr1, ...arr2])];
 
    return combinedArr.sort((a, b) => a - b);
 }
 
-console.log(sortedNumbersAscendingOrder());
+const firstArray = [100, 20, 3, 1];
+const secondArray = [14, 50, 6,3];
+
+console.log(sortedNumbersAscendingOrder(firstArray, secondArray));
+
+module.exports = {sortedNumbersAscendingOrder} ;

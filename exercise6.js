@@ -5,9 +5,8 @@
 
 */
 
-function calculateAreaCircle(radius) {
-  const areaCircle = Math.PI * (radius * radius);
-  return radius === undefined ? radius = "Radius is missing!" : areaCircle;
-}
+const calculateAreaCircle = (radius) =>  radius === undefined ? radius = "Radius is missing!" : Number((Math.PI * (radius * radius)).toFixed(2));
 
-console.log(calculateArea(2));
+console.log(calculateAreaCircle(2));
+
+module.exports = { calculateAreaCircle };

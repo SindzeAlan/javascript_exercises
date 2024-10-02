@@ -1,12 +1,11 @@
 /*
   
  8. Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one.
-
- try Using forEach
   
  */
 
-const isObjectSubset = (obj1, obj2) => {
+
+const duplicatePropertiesOfObject = (obj1, obj2) => {
 
   for (const key in obj2) {
     if (obj2.hasOwnProperty(key)) {
@@ -18,9 +17,9 @@ const isObjectSubset = (obj1, obj2) => {
   return `The two objects have properties in commun`;
 }
 
-const object1 = { name: 'Alice', age: 25, city: 'Paris' };
-const object2 = { age: 25, city: 'Paris' };
-const object3 = { age: 30, city: 'Paris' };
+const object1 = { name: 'Alice', agge: 25, citjy: 'Paris' };
+const object2 = { agwe: 25, city: 'Paris' };
+const object3 = { age: 30, citys: 'Paris' };
 
-console.log(isObjectSubset(object1, object2)); 
-console.log(isObjectSubset(object1, object3)); 
+console.log(duplicatePropertiesOfObject(object1, object2));
+console.log(duplicatePropertiesOfObject(object1, object3)); 

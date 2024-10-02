@@ -5,17 +5,18 @@
 
 */
 
-const carProperties = () => {
-  const car = {
-    make: "Toyota",
-    model: "LandRover",
-    year: 2020
-  }
-  
-  const {make, model, year = "unknown"} = car;
+const carProperties = (obj) => {
+
+  const { make, model, year = "unknown" } = car;
   const prop = [make, model, year];
-  
+
   return prop;
 }
 
-console.log(carProperties());
+const car = {
+  make: "Toyota",
+  model: "LandRover",
+  year: 2020
+}
+
+console.log(carProperties(car));
