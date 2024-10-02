@@ -27,3 +27,5 @@ const deleteProperty = () => {
 }
 
 console.log(deleteProperty());
+
+module.exports = { deleteProperty }

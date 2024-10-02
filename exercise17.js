@@ -14,6 +14,8 @@
   
   const givenInteger = 4; 
   console.log(`The sum of cubes from 1 to ${givenInteger} is: ${sumOfCubes(givenInteger)}`);
+
+  module.exports = { sumOfCubes }
   
 
 

@@ -4,12 +4,13 @@
 
 */
 
-const filterOutValues = (array, ...valuesToFilter) => {
+const filterOutValues = (array, valuesToFilter) => {
   return array.filter(element => !valuesToFilter.includes(element));
 }
 
 const originalArray = [1, 2, 3, 4, 5, 6];
 
-const filteredArray = filterOutValues(originalArray, 1,3,4,7);
+const filteredArray = filterOutValues(originalArray, [1,3,4,7]);
 console.log(filteredArray);
 
+module.exports = { filterOutValues }

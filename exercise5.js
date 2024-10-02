@@ -20,3 +20,5 @@ const car = {
 }
 
 console.log(carProperties(car));
+
+module.exports = { carProperties }

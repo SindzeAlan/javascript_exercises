@@ -13,11 +13,12 @@ const fetchData = () => {
     setTimeout(() => resolve('Data fetched sucessfully!'), (randomNumber * 1000))
   })
 }
-fetchData()
-  .then(sucess => {
-     console.log(sucess);
-   })
 
-   module.exports = { fetchData }
+module.exports = { fetchData }
+
+// fetchData()
+//   .then(sucess => {
+//      console.log(sucess);
+//    })
 
 

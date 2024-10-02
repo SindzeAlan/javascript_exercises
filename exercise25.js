@@ -6,17 +6,21 @@
 
 const add = (a, b) => {
   return new Promise((resolve, reject) => {
-    if(a == undefined || b == undefined){
+    if (a == undefined || b == undefined) {
       reject('Must provide two parameters');
     }
-    else{
+    else {
       resolve(a + b);
     }
-  } )
+  })
 }
 
-add(2).then((result) => {
-  console.log(result);
-}).catch((error) => {
-  console.log(error);
-});
+module.exports = { add }
+
+// add(2).then((result) => {
+//   console.log(result);
+// }).catch((error) => {
+//   console.log(error);
+// });
+
+

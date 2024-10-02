@@ -24,5 +24,7 @@ const removeDuplicateCharacters = (str) => {
   return result;
 }
 
-console.log(removeDuplicateCharacters("[p,r,o,g,r,a,m,m,i,n,g]")); 
+console.log(removeDuplicateCharacters("programming")); 
+
+module.exports = { removeDuplicateCharacters }
 

@@ -5,9 +5,6 @@
 use ES6
 */
 
-const str = ['111', '111', '1111', '1111', '0' , '1', 'jjjjjjjjjj'];
-
-
 const longestStr = (arr) => {
 
   const longest = arr.reduce((accumulator,currentValue) => {
@@ -17,4 +14,8 @@ const longestStr = (arr) => {
   return longest;
 }
 
+const str = ['111', '111', '1111', '1111', '0' , '1', 'jjjjjjjjjj'];
+
 console.log(`The longest string of the given array is "${longestStr(str)}"`);
+
+module.exports = { longestStr }

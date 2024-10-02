@@ -18,7 +18,7 @@ const books = [
 
   { title: 'la chevre de ma mere', pages: 120 },
 
-  { title: 'the reasons of my wealth', pages: 200 }
+  { title: 'the reasons of my wealth', pages: 350 }
 ];
 
 console.log(booksMoreThan300Pages(books));

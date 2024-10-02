@@ -18,6 +18,8 @@ function checkString(str) {
 
 console.log(checkString('HELLo'));
 
+module.exports = { checkString }
+
 
 
 

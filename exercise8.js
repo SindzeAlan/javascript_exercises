@@ -16,3 +16,5 @@ const reversedWords = (arr) => {
 const cars = ['Toyota', 'Ferrari', 'Jeep', 'Audi'];
 
 console.log(reversedWords(cars));
+
+module.exports = { reversedWords }
